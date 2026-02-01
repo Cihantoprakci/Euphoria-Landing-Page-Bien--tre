@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: rgba(205, 221, 214, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 94px;
+}
+
+header ul {
+    display: flex;
+    gap: 49px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header ul a {
+    color: rgba(10, 13, 18, 1);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 21px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.title .content {
+    padding: 80px 50px 80px;
+    width: 715px;
+    height: 313px;
+}
+
+.title .content h1 {
+    color: rgba(9, 146, 80, 1);
+    font-size: 60px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0 0 24px 0;
+}
+
+.title .content p {
+    color: rgba(39, 39, 39, 1);
+    font-size: 23px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0 0 24px 0;
+}
+
+.title .content a {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: rgba(9, 146, 80, 1);
+    text-decoration: none;
+    padding: 16px 32px;
+    font-size: 23px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.title img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+}
+
+.description img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin: 80px 60px 100px 50px;
+}
+
+.description .information h2 {
+    color: rgba(9, 146, 80, 1);
+    font-size: 45px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0 0 24px 0;
+}
+
+.description .information p {
+    color: rgba(39, 39, 39, 1);
+    font-size: 23px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0 0 24px 0;
+}
+
+.description .information a {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: rgba(9, 146, 80, 1);
+    text-decoration: none;
+    padding: 15px 32px 17px 32px;
+    font-size: 23px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: rgba(205, 221, 214, 1);
+    padding: 0 50px;
+    height: 365px;
+}
+
+.contact {
+    margin-bottom: 80px;
+}
+
+.contact img {
+    margin: 80px 0 24px 0;
+}
+
+.contact p {
+    color: rgba(39, 39, 39, 1);
+    font-size: 23px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0 0 16px 0;
+}
+
+.contact form {
+    display: flex;
+    gap: 24px;
+    align-items: flex-end;
+
+}
+
+.contact form .field_line {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact form .field_group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact form label {
+    color: rgba(33, 39, 42, 1);
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.contact form input {
+    color: white;
+    width: 253px;
+    height: 48px;
+    border-radius: 8px;
+    border: 0;
+}
+
+.contact button {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: rgba(9, 146, 80, 1);
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    border-radius: 8px;
+    border: 0;
+    padding: 12px 37px 14px 32px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+    header {
+        flex-direction: column;
+        height: initial;
+        gap: 16px;
+        padding: 24px;
+    }
+    header ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+    header ul a {
+        font-size: 16px;
+    }
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+    }
+    .title .content {
+        padding: 25px;
+        margin: 0;
+        width: 80%;
+        height: 100%;
+    }
+    .title .content a {
+        margin: 0;
+    }
+    .title img {
+        width: 100%;
+        height: initial;
+    }
+    .description {
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        align-items: center;
+    }
+    .description img {
+        margin-bottom: 20px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    .contact form {
+        flex-direction: column;
+    }
+}
